@@ -42,12 +42,6 @@ RedLoader does not start.
 Settings are in RedLoader's **Mod Settings** menu under **TacticoolMarines**, or
 in `UserData/TacticoolMarines.cfg`.
 
-Server owners type commands in chat. The main ones:
-- `/tmhelp`: the command overview
-- `/tmfollow`, `/tmstay`, `/tmbuild`: orders for everyone
-- `/tmremove`: removing soldiers and leftover duplicates
-- `/tmperf`: server performance
-
 In single player, `adddebugsoldier` in the F1 console spawns a soldier. The full
 list is in [docs/COMMANDS.md](docs/COMMANDS.md).
 
