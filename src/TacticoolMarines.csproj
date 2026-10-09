@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <AssemblyName>TacticoolMarines</AssemblyName>
+    <RootNamespace>CharacterReplacement</RootNamespace>
+    <LangVersion>latest</LangVersion>
+    <Nullable>disable</Nullable>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DisableImplicitFrameworkReferences>true</DisableImplicitFrameworkReferences>
+    <NoStdLib>true</NoStdLib>
+    <NoCompilerStandardLib>true</NoCompilerStandardLib>
+    <GenerateDependencyFile>false</GenerateDependencyFile>
+    <GenerateRuntimeConfigurationFiles>false</GenerateRuntimeConfigurationFiles>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <Version>1.43.0</Version>
+    <DebugType>none</DebugType>
+    <Deterministic>true</Deterministic>
+    <GenerateTargetFrameworkAttribute>false</GenerateTargetFrameworkAttribute>
+    <!-- The _Redloader folder of your Sons of the Forest installation; or build with -p:GRoot="..." -->
+    <GRoot Condition="'$(GRoot)' == ''">C:\Program Files (x86)\Steam\steamapps\common\Sons Of The Forest\_Redloader</GRoot>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="$(GRoot)/dotnet/*.dll" Private="false" />
+    <Reference Include="$(GRoot)/net6/*.dll" Private="false" />
+    <Reference Include="$(GRoot)/Game/*.dll" Private="false" />
+  </ItemGroup>
+</Project>
